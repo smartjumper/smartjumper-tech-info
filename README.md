@@ -1,5 +1,5 @@
 
-![smartjumper_logo.png]()
+![smartjumper_logo.png](./smartjumper_logo.png)
 
 本ページでは、アクセス管理ソフトウェア SmartJumper に関する技術的な情報を掲載しています。  
 よくあるご質問、トラブルシュート、環境構築手順など、SmartJumperのご利用に役立つ技術情報を随時アップデートいたします。  
