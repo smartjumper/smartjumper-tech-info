@@ -2,7 +2,7 @@
 <br>
 # 環境構築手順
 
-本ページでは、RHELとUbuntuでのDocker、Jumperの構築手順となります。
+本ページでは、RHELとUbuntuでのDocker、SmartJumperの構築手順となります。
 
 `注意事項`  
 手順の内容は、弊社にて確認を行った時点で正常に動作した内容となります。
