@@ -1,7 +1,7 @@
 
 # Docker及びSmartJumperのインストールと設定手順
 
-[↑ 環境構築手順に戻る](./environment_construction.md)
+[↑ 環境構築手順に戻る](../environment_construction.md)
 
 ## 目次
 
