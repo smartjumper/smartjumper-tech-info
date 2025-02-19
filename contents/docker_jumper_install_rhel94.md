@@ -58,7 +58,7 @@
 
 競合するパッケージを全てアンインストールするには、以下のコマンドを実行します。
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #sudo dnf remove docker \
@@ -73,7 +73,7 @@
                   runc
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 サブスクリプション管理リポジトリーを更新しています。
@@ -121,7 +121,7 @@
   
 以下に実行コマンドと実行結果を記載します。
 
-### 実行コマンド及び実行結果
+#### 実行コマンド/実行結果
 
 ```markdown
 #sudo dnf install dnf-plugins-core
@@ -165,7 +165,7 @@ repo の追加: https://download.docker.com/linux/rhel/docker-ce.repo
 #dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 サブスクリプション管理リポジトリーを更新しています。
@@ -202,7 +202,7 @@ Docker CE Stable - x86_64                                                       
 #systemctl enable --now docker
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.
@@ -210,13 +210,13 @@ Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /
 
 ### 1-5. インストールされているか確認
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #docker run hello-world
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 Unable to find image 'hello-world:latest' locally
@@ -235,19 +235,19 @@ Hello from Docker!
 Docker のリポジトリを使用し`rpm`でDocker Engine をインストールできない場合は、`.rpm`リリースのファイルをダウンロードして手動でインストールできます。  
 Docker Engine をアップグレードするたびに、新しいファイルをダウンロードする必要があります。  
 
-### 手順
+#### 手順
 
 1.  \[[https://download.docker.com/linux/rhel/](https://download.docker.com/linux/rhel/)\]へ移動します。
 2.  リストから現在使用しているRHELのバージョンを選択します。  
     　RHELのバージョンは以下コマンドで確認できます。
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 　#cat /etc/redhat-release
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 Red Hat Enterprise Linux release 9.4 (Plow)
@@ -269,7 +269,7 @@ Red Hat Enterprise Linux release 9.4 (Plow)
 
 6.  ダウンロードしたファイルを任意のディレクトリに置いて、以下のコマンドでインストールします。
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #rpm -ivh containerd.io-1.7.24-3.1.el9.x86_64.rpm 
@@ -282,7 +282,7 @@ Red Hat Enterprise Linux release 9.4 (Plow)
 
 ### 2-2. Docker エンジンを起動
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #systemctl enable --now docker
@@ -290,13 +290,13 @@ Red Hat Enterprise Linux release 9.4 (Plow)
 
 ### 2-3. dockerのversionが正しく表示されることを確認
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #docker version
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 Client: Docker Engine - Community
@@ -311,7 +311,7 @@ Client: Docker Engine - Community
 
 ## 3. SmartJumperのインストール
 
-## 前提条件
+### 前提条件
 
 #### ・OS
 
@@ -334,7 +334,7 @@ Client: Docker Engine - Community
 
 ### 3-2. インストーラーに実行権限を付与
 
-### 実行コマンド
+#### 実行コマンド/実行結果
 
 ```markdown
 #ls -l /tmp/smartjumper-installer-v1.1.0
@@ -347,7 +347,7 @@ Client: Docker Engine - Community
 
 ### 3-3. インストーラーを実行
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #./tmp/smartjumper-installer-v1.1.0
@@ -356,7 +356,7 @@ Client: Docker Engine - Community
 上記は /tmp 配下にインストーラーを配置した場合の実行コマンド です。
 インストーラーを配置ディレクトリによって実行する指定するディレクトリは変更になります。
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 Verifying installer checksum ... OK.
@@ -373,7 +373,7 @@ Smartjumper database is successfully initialized.
 
 ### 3-4. インストールされているか確認
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #smartjumper version
@@ -386,13 +386,13 @@ SmartJumper Version: v1.1.0
 
 以下コマンドでSmartJumperを起動します。
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #smartjumper start
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 [+] Running 4/1
@@ -412,13 +412,13 @@ SmartJumper Version: v1.1.0
 
 以下コマンドでSmartJumperの状態を確認します。
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #smartjumper status
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 #smartjumper status
