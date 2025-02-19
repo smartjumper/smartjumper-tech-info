@@ -10,7 +10,7 @@
 
 # SmartJumper 技術情報
 
-### [環境構築手順](./contents/procedures.md)
+### [環境構築手順](./environment_construction.md)
 
 - Docker および SmartJumper の環境構築手順書です。  
 手順書に記載している内容は、弊社にて確認を行った時点で正常に動作した内容となります。  
