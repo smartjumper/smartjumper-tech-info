@@ -413,3 +413,5 @@ SmartJumper のGUI アクセスが正常に動作しているかを確認しま�
 https://<SmartJumper をインストールしたサーバーIP アドレスもしくはホスト名>:10443  
 を入力し上記IDとパスワードを入力します。  
 URLを叩いたらログイン画面が表示される事を確認します。
+
+[↑ 環境構築手順に戻る](../environment_construction.md)
