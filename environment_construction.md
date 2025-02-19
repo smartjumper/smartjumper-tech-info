@@ -1,4 +1,4 @@
-[↑トップページに戻る](../README.md)
+[↑トップページに戻る](contents/procedures.md)
 <br>
 # 環境構築手順
 
