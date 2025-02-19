@@ -18,7 +18,7 @@ RHELやUbuntuのバージョンなど、ご利用の環境によっては記載�
 <br>
 <br>
 
-## 1. [RHELでのDocker及びSmartJumperのインストールと設定手順](./docker_jumper_install_rhel94.md)
+## 1. [RHELでのDocker及びSmartJumperのインストールと設定手順](./contents/docker_jumper_install_rhel94.md)
 
 * RHELでのDocker及びSmartJumperのインストールと設定手順となります。
 
