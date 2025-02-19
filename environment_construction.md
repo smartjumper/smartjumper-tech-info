@@ -1,4 +1,4 @@
-[↑トップページに戻る](contents/procedures.md)
+[↑トップページに戻る]([contents/procedures.md](https://github.com/smartjumper/smartjumper-tech-info/tree/main))
 <br>
 # 環境構築手順
 
