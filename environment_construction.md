@@ -25,6 +25,6 @@ RHELやUbuntuのバージョンなど、ご利用の環境によっては記載�
 <br>
 <br>
 
-## 2. [UbuntuでのDocker及びSmartJumperのインストールと設定手順](./docker_jumper_install_ubuntu2404.md)
+## 2. [UbuntuでのDocker及びSmartJumperのインストールと設定手順](./contents/docker_jumper_install_ubuntu2404.md)
 
 * UbuntuでのDocker及びSmartJumperのインストールと設定手順となります。
