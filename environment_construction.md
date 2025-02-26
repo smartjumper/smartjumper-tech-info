@@ -11,20 +11,20 @@ DockerやOSのバージョンなど、ご利用の環境によっては記載内
 <br>
 
 ## 目次
-- [1. RHELでのDocker及びSmartJumperのインストール手順](./environment_construction.md#1-RHELでのDocker及びSmartJumperのインストール手順)
+- [1. RHEL9.4でのDocker及びSmartJumperのインストール手順](./environment_construction.md#1-RHEL9.4でのDocker及びSmartJumperのインストール手順)
 
-- [2. UbuntuでのDocker及びSmartJumperのインストール手順](./environment_construction.md#2-UbuntuでのDocker及びSmartJumperのインストール手順)
-
-<br>
-<br>
-
-## 1. [RHELでのDocker及びSmartJumperのインストール手順](./contents/docker_jumper_install_rhel94.md)
-
-* RHELでのDocker及びSmartJumperのインストール手順となります。
+- [2. Ubuntu24.04でのDocker及びSmartJumperのインストール手順](./environment_construction.md#2-Ubuntu24.04でのDocker及びSmartJumperのインストール手順)
 
 <br>
 <br>
 
-## 2. [UbuntuでのDocker及びSmartJumperのインストール手順](./contents/docker_jumper_install_ubuntu2404.md)
+## 1. [RHEL9.4でのDocker及びSmartJumperのインストール手順](./contents/docker_jumper_install_rhel94.md)
 
-* UbuntuでのDocker及びSmartJumperのインストール手順となります。
+* RHEL9.4でのDocker及びSmartJumperのインストール手順となります。
+
+<br>
+<br>
+
+## 2. [Ubuntu24.04でのDocker及びSmartJumperのインストール手順](./contents/docker_jumper_install_ubuntu2404.md)
+
+* Ubuntu24.04でのDocker及びSmartJumperのインストール手順となります。
