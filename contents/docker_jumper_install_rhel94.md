@@ -457,7 +457,7 @@ https://<SmartJumper をインストールしたサーバーIP アドレスも�
 を入力し上記IDとパスワードを入力します。  
 URLを叩いたらログイン画面が表示される事を確認します。
 
-![画像1](https://github.com/user-attachments/assets/9783c428-6477-4f71-955d-515ce6205413)
+![画像2](https://github.com/user-attachments/assets/ff573343-ce8a-419e-adaf-b26f973c68ed)
 
 
 [↑ 環境構築手順に戻る](../environment_construction.md)
