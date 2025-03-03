@@ -1,13 +1,14 @@
+
 # Docker及びSmartJumperのインストールと設定手順
 
 [↑ 環境構築手順に戻る](../environment_construction.md)
 
 ## 目次
 
--   [1.UbuntuでのDockerインストール方法(Internetアクセス可の場合)](https://github.com/smartjumper/smartjumper-tech-info/blob/main/contents/docker_jumper_install_ubuntu2404.md#1ubuntu%E3%81%A7%E3%81%AEdocker%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95internet%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E5%8F%AF%E3%81%AE%E5%A0%B4%E5%90%88
-)
--   [2.UbuntuでのDockerインストール方法(Internetアクセス不可の場合)](https://github.com/smartjumper/smartjumper-tech-info/blob/main/contents/docker_jumper_install_ubuntu2404.md#2ubuntu%E3%81%A7%E3%81%AEdocker%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95internet%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E4%B8%8D%E5%8F%AF%E3%81%AE%E5%A0%B4%E5%90%88
-)
+-   [1.UbuntuでのDockerインストール方法(Internetアクセス可の場合)](https://github.com/smartjumper/smartjumper-tech-info/blob/main/contents/docker_jumper_install_ubuntu2404.md#1ubuntu%E3%81%A7%E3%81%AEdocker%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95internet%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E5%8F%AF%E3%81%AE%E5%A0%B4%E5%90%88)
+
+-   [2.UbuntuでのDockerインストール方法(Internetアクセス不可の場合)](https://github.com/smartjumper/smartjumper-tech-info/blob/main/contents/docker_jumper_install_ubuntu2404.md#2ubuntu%E3%81%A7%E3%81%AEdocker%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95internet%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E4%B8%8D%E5%8F%AF%E3%81%AE%E5%A0%B4%E5%90%88)
+
 -   [3.SmartJumperのインストール](https://github.com/smartjumper/smartjumper-tech-info/blob/main/contents/docker_jumper_install_ubuntu2404.md#3smartjumper%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
 
 ## 動作確認環境
@@ -16,7 +17,7 @@
 
 #### ・OSのバージョン
 
--   `ubuntu：24.04`
+-   `ubuntu: version24.04`
 
 #### ・Dockerのバージョン
 
@@ -28,13 +29,11 @@
 
 ## 前提条件
 
-Dockerが動くディストリビューション(Ubuntu 24.04)がインストール済みであること。
+Dockerが動くディストリビューション(Ubuntu 24.04)がインストール済みであること。  
 
+## 1. UbuntuでのDockerインストール方法(Internetアクセス可の場合)
 
-
-# 1.UbuntuでのDockerインストール方法(Internetアクセス可の場合)
-
-参考にしたURLは以下となります  
+参考にしたURLは以下となります。  
 [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
 
 ### 1-1. 競合の確認、アンインストール
@@ -53,13 +52,13 @@ Dockerが動くディストリビューション(Ubuntu 24.04)がインストー
 
 競合するパッケージを全てアンインストールするには、以下のコマンドを実行します。
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done 
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 #for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
@@ -93,7 +92,7 @@ Dockerが動くディストリビューション(Ubuntu 24.04)がインストー
   
 以下に実行コマンドと実行結果を記載します。
 
-### 実行コマンド及び実行結果
+#### 実行コマンド/実行結果
 
 ```markdown
 #sudo apt-get update
@@ -159,7 +158,7 @@ echo \ 以降は1行づつコピーして貼り付けてください。
 #sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 #sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
@@ -188,13 +187,13 @@ containerd.io (1.7.24-1) の設定ファイルを削除しています ...
 
 ### 1-4. インストールされているか確認
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #sudo docker run hello-world
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 Unable to find image 'hello-world:latest' locally
@@ -206,9 +205,9 @@ Status: Downloaded newer image for hello-world:latest
 Hello from Docker! 
 ```
 
-# 2.UbuntuでのDockerインストール方法(Internetアクセス不可の場合)
+## 2. UbuntuでのDockerインストール方法(Internetアクセス不可の場合)
 
-### 2-1.パッケージからのインストール方法
+### 2-1. パッケージからのインストール方法
 
 `apt`でDocker Engineをインストールできない場合は、`deb`リリースのファイルをダウンロードして手動でインストールしてください。
 
@@ -218,8 +217,7 @@ Hello from Docker!
 2.  リストから現在使用しているUbuntuのバージョンを選択します  
     　Code nameは[ubuntu wiki](https://wiki.ubuntu.com/Releases)を参照  
     　最新版(24.04)を使用している方のdistsはNobleを選択します  
-    　  
-    
+
 3.  `pool/stable/` に移動し、該当するアーキテクチャ（`amd64`、`armhf`、`arm64`、または`s390x`）を選択します
 4.  以下のパッケージファイルをダウンロードします
 
@@ -231,7 +229,7 @@ Hello from Docker!
 
 5.  ダウンロードしたファイルを所定のフォルダに置いて、以下のコマンドでインストールします
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #sudo dpkg -i ./containerd.io_<version>_<arch>.deb \
@@ -241,15 +239,15 @@ Hello from Docker!
   ./docker-compose-plugin_<version>_<arch>.deb
 ```
 
-### 2-2.dockerのversionが正しく表示されることを確認します。
+### 2-2. Dockerのversionが正しく表示されることを確認します。
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #docker version
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 Client: Docker Engine - Community
@@ -262,9 +260,9 @@ Client: Docker Engine - Community
  Context:           default
 ```
 
-# 3.SmartJumperのインストール
+## 3. SmartJumperのインストール
 
-## 前提条件
+### 前提条件
 
 #### ・OS
 
@@ -285,9 +283,9 @@ Client: Docker Engine - Community
 インストーラーは以下からダウンロードしてください  。
 [SmartJumperソフトウェア申請フォーム](https://ws.formzu.net/fgen/S54752725/?_gl=1*1pfteqd*_gcl_au*MjQ0MTAwNDMxLjE3MjkwNDM0OTI.*_ga*NjMzMTA4ODMyLjE1OTM0MDYwMzE.*_ga_78MV2EB8JQ*MTczNjMyMDQ5Ni4zNTAuMS4xNzM2MzIwNTQ1LjExLjAuMA..*_ga_HV6RRN1K5W*MTczNjMyMDQ5Ni4zNTEuMS4xNzM2MzIwNTQ0LjAuMC4w&_ga=2.49847526.1931747171.1736296141-633108832.1593406031)
 
-### 3-2. インストーラーに実行権限を付与する
+### 3-2. インストーラーに実行権限を付与
 
-### 実行コマンド
+#### 実行コマンド/実行結果
 
 ```markdown
 #ls -l /tmp/smartjumper-installer-v1.1.0
@@ -298,9 +296,9 @@ Client: Docker Engine - Community
 -rwxr-xr-x 1 root root 713975891 Nov 25 14:18 /tmp/smartjumper-installer-v1.1.0
 ```
 
-### 3-3. インストーラーを実行する
+### 3-3. インストーラーを実行
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #./tmp/smartjumper-installer-v1.1.0
@@ -309,7 +307,7 @@ Client: Docker Engine - Community
 上記は /tmp 配下にインストーラーを配置した場合の実行コマンドです。  
 インストーラーを配置ディレクトリによって実行する指定するディレクトリは変更になります。
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 Verifying installer checksum ... OK.
@@ -326,7 +324,7 @@ Smartjumper database is successfully initialized.
 
 ### 3-4. インストールされているか確認
 
-### 実行コマンド
+#### 実行コマンド/実行結果
 
 ```markdown
 #smartjumper version
@@ -335,17 +333,17 @@ SmartJumper Version: v1.1.0
 
 ----------
 
-### 3-5. SmartJumperの起動
+#### 3-5. SmartJumperの起動
 
 以下コマンドでSmartJumperを起動します。
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #smartjumper start
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 [+] Running 4/1
@@ -363,13 +361,13 @@ SmartJumper Version: v1.1.0
 
 以下コマンドでSmartJumperの状態を確認します。
 
-### 実行コマンド
+#### 実行コマンド
 
 ```markdown
 #smartjumper status
 ```
 
-### 実行結果
+#### 実行結果
 
 ```markdown
 #smartjumper status
