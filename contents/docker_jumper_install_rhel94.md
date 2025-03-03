@@ -17,7 +17,7 @@
 
 #### ・OSのバージョン
 
--   `RHEL： version9.4`
+-   `RHEL: version9.4`
 
 #### ・Dockerのバージョン
 
@@ -31,9 +31,6 @@
 
 -   Dockerが動くディストリビューション(RHEL9.4)がインストール済みであること
 -   サブスクリプションが登録済みであること(インターネットアクセス可の場合)  
-      
-    
-
 
 ## 1. RHELでのDockerインストール方法(Internetアクセス可の場合)
 
@@ -196,6 +193,8 @@ Docker CE Stable - x86_64                                                       
 
 ### 1-4. Docker エンジンを起動
 
+#### 実行コマンド
+
 ```markdown
 #systemctl enable --now docker
 ```
@@ -257,7 +256,6 @@ Red Hat Enterprise Linux release 9.4 (Plow)
 4.  該当するアーキテクチャ ( `x86_64`、`aarch64`、または`s390x`) を選択し、`stable/Packages/`に進みます。
     
 5.  Docker Engine、CLI、containerd、および Docker Compose パッケージの次のファイルをダウンロードします。
-    
 
 -   `containerd.io-1.7.24-3.1.el9.x86_64.rpm`
 -   `docker-ce-27.4.1-1.el9.x86_64.rpm`
@@ -286,7 +284,7 @@ Red Hat Enterprise Linux release 9.4 (Plow)
 #systemctl enable --now docker
 ```
 
-### 2-3. dockerのversionが正しく表示されることを確認
+### 2-3. Dockerのversionが正しく表示されることを確認
 
 #### 実行コマンド
 
@@ -371,7 +369,7 @@ Smartjumper database is successfully initialized.
 
 ### 3-4. インストールされているか確認
 
-#### 実行コマンド
+#### 実行コマンド/実行結果
 
 ```markdown
 #smartjumper version
