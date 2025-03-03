@@ -1,8 +1,7 @@
 
 # Docker及びSmartJumperのインストールと設定手順
 
-[↑ 環境構築手順に戻る](../environment_construction.md)
-
+[↑ 環境構築手順に戻る](../environment_construction.md)  
 
 ## 目次
 
@@ -10,8 +9,7 @@
 
 -   [2. RHELでのDockerインストール方法(Internetアクセス不可の場合)](https://github.com/smartjumper/smartjumper-tech-info/blob/main/contents/docker_jumper_install_rhel94.md#2rhel%E3%81%A7%E3%81%AEdocker%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95internet%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E4%B8%8D%E5%8F%AF%E3%81%AE%E5%A0%B4%E5%90%88)
 
--   [3. SmartJumperのインストール](https://github.com/smartjumper/smartjumper-tech-info/blob/main/contents/docker_jumper_install_rhel94.md#3smartjumper%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
-
+-   [3. SmartJumperのインストール](https://github.com/smartjumper/smartjumper-tech-info/blob/main/contents/docker_jumper_install_rhel94.md#3smartjumper%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)  
 
 ## 動作確認環境
 
@@ -27,19 +25,17 @@
 
 #### ・SmartJumperのバージョン
 
--   `SmartJumper v1.1.0`
-
+-   `SmartJumper v1.1.0`  
 
 ## 前提条件
 
 -   Dockerが動くディストリビューション(RHEL9.4)がインストール済みであること
 -   サブスクリプションが登録済みであること(インターネットアクセス可の場合)  
 
-
 ## 1. RHELでのDockerインストール方法(Internetアクセス可の場合)
 
 参考にしたURLは以下となります。  
-[https://docs.docker.com/engine/install/rhel/](https://docs.docker.com/engine/install/rhel/)
+[https://docs.docker.com/engine/install/rhel/](https://docs.docker.com/engine/install/rhel/)  
 
 ### 1-1. 競合の確認、アンインストール
 
@@ -110,8 +106,7 @@
   cockpit-podman-84.1-1.el9.noarch                                          conmon-2:2.1.10-1.el9.x86_64                                          podman-2:4.9.4-0.1.el9.x86_64
 
 完了しました!
-```
-
+```  
 
 ### 1-2. rpmリポジトリを使用してインストールする
 
@@ -155,8 +150,7 @@
 
 サブスクリプション管理リポジトリーを更新しています。
 repo の追加: https://download.docker.com/linux/rhel/docker-ce.repo
-```
-
+```  
 
 ### 1-3. Dockerエンジンのインストール
 
@@ -195,8 +189,7 @@ Docker CE Stable - x86_64                                                       
   docker-compose-plugin-2.32.1-1.el9.x86_64
 
 完了しました!
-```
-
+```  
 
 ### 1-4. Docker エンジンを起動
 
@@ -210,8 +203,7 @@ Docker CE Stable - x86_64                                                       
 
 ```markdown
 Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.
-```
-
+```  
 
 ### 1-5. インストールされているか確認
 
@@ -231,10 +223,9 @@ Digest: sha256:5b3cc85e16e3058003c13b7821318369dad01dac3dbb877aac3c28182255c724
 Status: Downloaded newer image for hello-world:latest
 
 Hello from Docker!
-```
+```  
 
-
-## 2. RHELでのDockerインストール方法(Internetアクセス不可の場合)
+## 2. RHELでのDockerインストール方法(Internetアクセス不可の場合)  
 
 ### 2-1. パッケージからのインストール方法
 
@@ -283,8 +274,7 @@ Red Hat Enterprise Linux release 9.4 (Plow)
 #rpm -ivh docker-buildx-plugin-0.19.3-1.el9.x86_64.rpm
 #rpm -ivh docker-compose-plugin-2.32.1-1.el9.x86_64.rpm
 
-```
-
+```  
 
 ### 2-2. Docker エンジンを起動
 
@@ -292,7 +282,7 @@ Red Hat Enterprise Linux release 9.4 (Plow)
 
 ```markdown
 #systemctl enable --now docker
-```
+```  
 
 ### 2-3. Dockerのversionが正しく表示されることを確認
 
@@ -313,8 +303,7 @@ Client: Docker Engine - Community
  Built:             Sat Dec  7 10:40:42 2024
  OS/Arch:           linux/amd64
  Context:           default
-```
-
+```  
 
 ## 3. SmartJumperのインストール
 
@@ -332,13 +321,12 @@ Client: Docker Engine - Community
 
 #### ・メモリ
 
--   `SmartJumper は稼働中に定常的に約4GB を使用します`
+-   `SmartJumper は稼働中に定常的に約4GB を使用します`  
 
 ### 3-1. インストーラーをダウンロードし、任意のディレクトリへ配置した後にインストーラーを実行
 
 インストーラーは以下からダウンロードしてください  
-[SmartJumperソフトウェア申請フォーム](https://ws.formzu.net/fgen/S54752725/?_gl=1*1pfteqd*_gcl_au*MjQ0MTAwNDMxLjE3MjkwNDM0OTI.*_ga*NjMzMTA4ODMyLjE1OTM0MDYwMzE.*_ga_78MV2EB8JQ*MTczNjMyMDQ5Ni4zNTAuMS4xNzM2MzIwNTQ1LjExLjAuMA..*_ga_HV6RRN1K5W*MTczNjMyMDQ5Ni4zNTEuMS4xNzM2MzIwNTQ0LjAuMC4w&_ga=2.49847526.1931747171.1736296141-633108832.1593406031)
-
+[SmartJumperソフトウェア申請フォーム](https://ws.formzu.net/fgen/S54752725/?_gl=1*1pfteqd*_gcl_au*MjQ0MTAwNDMxLjE3MjkwNDM0OTI.*_ga*NjMzMTA4ODMyLjE1OTM0MDYwMzE.*_ga_78MV2EB8JQ*MTczNjMyMDQ5Ni4zNTAuMS4xNzM2MzIwNTQ1LjExLjAuMA..*_ga_HV6RRN1K5W*MTczNjMyMDQ5Ni4zNTEuMS4xNzM2MzIwNTQ0LjAuMC4w&_ga=2.49847526.1931747171.1736296141-633108832.1593406031)  
 
 ### 3-2. インストーラーに実行権限を付与
 
@@ -351,8 +339,7 @@ Client: Docker Engine - Community
 #chmod +x /tmp/smartjumper-installer-v1.1.0
 #ls -l /tmp/smartjumper-installer-v1.1.0
 -rwxr-xr-x 1 root root 713975891 Nov 25 14:18 /tmp/smartjumper-installer-v1.1.0 
-```
-
+```  
 
 ### 3-3. インストーラーを実行
 
@@ -378,8 +365,7 @@ stopping smartjumper
 Container smartjumper-sshd-1 Removed 0.2s
 Container smartjumper-nginx-1 Removed 0.2s
 Smartjumper database is successfully initialized.
-```
-
+```  
 
 ### 3-4. インストールされているか確認
 
@@ -390,8 +376,7 @@ Smartjumper database is successfully initialized.
 SmartJumper Version: v1.1.0
 ```
 
-----------
-
+----------  
 
 ### 3-5. SmartJumperの起動
 
@@ -458,8 +443,7 @@ SmartJumper Services:
 
 -   `Running: yes となっていること`
 -   `IMAGE のタグ情報が、インストールしたバージョンであること`
--   `IMAGE STATUS が全てexists であること`
-
+-   `IMAGE STATUS が全てexists であること`  
 
 ### 3-6. 起動後の確認：GUIアクセス
 
