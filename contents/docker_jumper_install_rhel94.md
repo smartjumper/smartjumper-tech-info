@@ -2,7 +2,7 @@
 # Docker及びSmartJumperのインストールと設定手順
 
 [↑ 環境構築手順に戻る](../environment_construction.md)  
-  
+
 ## 目次
 
 -   [1. RHELでのDockerインストール方法(Internetアクセス可の場合)](https://github.com/smartjumper/smartjumper-tech-info/blob/main/contents/docker_jumper_install_rhel94.md#1rhel%E3%81%A7%E3%81%AEdocker%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95internet%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E5%8F%AF%E3%81%AE%E5%A0%B4%E5%90%88)
@@ -374,9 +374,7 @@ Smartjumper database is successfully initialized.
 ```markdown
 #smartjumper version
 SmartJumper Version: v1.1.0
-```
-
-----------  
+```  
 
 ### 3-5. SmartJumperの起動
 
