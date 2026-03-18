@@ -10,6 +10,11 @@
 
 # SmartJumper 技術情報
 
+### [よくあるご質問](./contents/faq.md)
+
+- SmartJumper をご利用いただく際のよくあるご質問です。  
+SmartJumper の動作、設定方法などに関連する一般的なご質問内容と回答を掲載しています。  
+
 ### [環境構築手順](./environment_construction.md)
 
 - Docker および SmartJumper の環境構築手順書です。  
