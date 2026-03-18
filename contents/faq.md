@@ -21,7 +21,7 @@
 - [SmartGSからSmartJumperへのconfig移行について教えてください。](#SmartGSからSmartJumperへのconfig移行について教えてください)
 - [SmartJumperにGUIでログイン後、言語設定から表示言語を変更しましたが、ログアウトすると変更前の言語に戻ってしまいます。](#SmartJumperにGUIでログイン後言語設定から表示言語を変更しましたがログアウトすると変更前の言語に戻ってしまいます)
 ### SmartCSとの連携について
-- [SmartCS経由でのコンソール接続もSmartJumperで管理したいです。SmartCSと組み合わせて利用する際の、ターゲット数のカウントについて教えてください。](#SmartCS経由でのコンソール接続もSmartJumperで管理したいです。SmartCSと組み合わせて利用する際の、ターゲット数のカウントについて教えてください。)
+- [SmartCS経由でのコンソール接続もSmartJumperで管理したいです。SmartCSと組み合わせて利用する際の、ターゲット数のカウントについて教えてください。](#SmartCS経由でのコンソール接続もSmartJumperで管理したいですSmartCSと組み合わせて利用する際のターゲット数のカウントについて教えてください)
 
 
 <br>
