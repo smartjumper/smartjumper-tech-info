@@ -18,13 +18,13 @@ DockerやOSのバージョンなど、ご利用の環境によっては記載内
 <br>
 <br>
 
-## 1. [RHEL9.4でのDocker及びSmartJumperのインストール手順](./contents/docker_jumper_install_rhel94.md)
+## 1. [RHEL9.4でのDocker及びSmartJumperのインストール手順](./docker_jumper_install_rhel94.md)
 
 * RHEL9.4でのDocker及びSmartJumperのインストール手順となります。
 
 <br>
 <br>
 
-## 2. [Ubuntu24.04でのDocker及びSmartJumperのインストール手順](./contents/docker_jumper_install_ubuntu2404.md)
+## 2. [Ubuntu24.04でのDocker及びSmartJumperのインストール手順](./docker_jumper_install_ubuntu2404.md)
 
 * Ubuntu24.04でのDocker及びSmartJumperのインストール手順となります。
